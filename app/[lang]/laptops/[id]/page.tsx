@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import AddToCartButton from '@/components/AddToCartButton';
+import Header from '@/components/header';
+import { getDictionary } from '@/app/dictionaries';
 
 interface Laptop {
   id: number;
@@ -26,17 +28,20 @@ async function getLaptop(id: string): Promise<Laptop | null> {
   return res.json();
 }
 
-export default async function LaptopPage({ params }: { params: { id: string } }) {
+export default async function LaptopPage({ params }: { params: { id: string, lang: 'en' | 'fi' } }) {
   // Await the params object to access properties in Next.js 15+
   const { id } = await params;
   const laptop = await getLaptop(id);
-
+  const { lang } = await params;
+  const dict = await getDictionary(lang);
   if (!laptop) {
     notFound(); // Shows the Next.js 404 page
   }
 
   return (
     <div className="container mx-auto p-8">
+      
+      <Header lang={lang} dict={dict.header} />
       {/* Back Button */}
       <Link href="/" className="text-indigo-600 hover:underline mb-4 inline-block">
         &larr; Back to Inventory
@@ -51,11 +56,11 @@ export default async function LaptopPage({ params }: { params: { id: string } })
 
         {/* Right Column: Details */}
         <div>
-          <h1 className="text-4xl font-bold text-gray-900">{laptop.brand} {laptop.model}</h1>
+          <h1 className="text-4xl font-bold">{laptop.brand} {laptop.model}</h1>
           <p className="text-2xl text-indigo-600 font-bold mt-4">${laptop.price.toFixed(2)}</p>
           
           <div className="mt-6 space-y-4">
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-200 leading-relaxed">
               {laptop.description || "No description available for this unit."}
             </p>
             

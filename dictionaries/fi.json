@@ -8,17 +8,20 @@
     "laptops": "Läppärit",
     "desktops": "Pöytäkoneet",
     "peripherals": "Oheislaitteet",
-    "shopNamePrimary": "TBD",
+    "shopNamePrimary": "NimiTBD",
     "shopNameSecondary": "Kauppa"
   },
   "hero": {
-    "justIn": "Juuri saapunut",
-    "shopNow": "Osta Nyt",
+    "justIn": "Vasta saapuneet",
+    "shopNow": "Osta Heti",
     "noStock": "Ei varastossa",
     "featuredDescription": "Loistavaa suorituskykyä halvalla hinnalla.",
     "collection": "Katso kaikki tuotteet",
-    "categories": "Katso kategoriat",
-    "view": "Katso"
+    "categories": "Katso kategoria",
+    "view": "Katso",
+    "laptops": "Läppärit",
+    "gamingPCs": "Pelikoneet",
+    "peripherals": "Oheislaitteet"
   },
   "chat": {
     "greeting": "Hei! 👋 Olen LapBot. Miten voin auttaa sinua tänään?",
@@ -32,7 +35,7 @@
       "returns": "Palautus?"
     },
     "answers": {
-      "shipping": "Tarjoamme ilmainen toimituksen kaikille tuotteille! Tämä johtuu siitä, että meillä ei ole vielä tuotteita, joten ei ole mitään mitä toimittaa :)",
+      "shipping": "Tarjoamme ilmainen toimituksen kaikille tuotteille! Tämä johtuu siitä, että emme ole vielä oikea kauppa, joten ei ole mitään mitä toimittaa :)",
       "warranty": "Kaikki meidän kunnostetut tuotteet tulevat yhden (1) vuoden takuulla. Uudet tuotteet tulevat kahden (2) vuoden takuulla. Takuu kattaa ongelmat, jotka eivät johtuneet käyttäjän aiheuttamista ongelmista.",
       "returns": "Sinulla on 30 päivää palauttaa tuote, jos et ole tyytyväinen."
     }

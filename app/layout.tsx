@@ -1,6 +1,6 @@
 import { getDictionary } from './dictionaries';
 import ChatWidget from '@/components/ChatWidget';
-import '../globals.css'; 
+import './globals.css'; 
 
 export default async function RootLayout({
   children,

@@ -109,7 +109,7 @@ export default function ChatWidget({ lang, dict }: ChatWidgetProps) {
           </div>
 
           {/* Messages */}
-          <div className="flex-1 p-4 overflow-y-auto space-y-4 bg-secondary/30">
+          <div className="flex-1 p-4 overflow-y-auto space-y-4 bg-secondary">
             {messages.map((m, i) => (
               <div key={i} className={`flex ${m.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                 <div className={`max-w-[85%] p-3 rounded-2xl text-sm leading-relaxed shadow-sm ${

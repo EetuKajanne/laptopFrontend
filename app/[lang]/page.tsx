@@ -84,18 +84,18 @@ export default async function Home({ params, searchParams }: { params: { lang: '
         </section>
 
         {/* CATEGORIES ROW */}
-        <section className="container mx-auto px-4 -mt-10 relative z-20">
+        <section className="container mx-auto px-4 mt-10 relative z-20">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {['Laptops', 'Gaming PCs', 'Peripherals'].map((cat) => (
+            {[dict.hero.laptops, dict.hero.gamingPCs, dict.hero.peripherals].map((cat) => (
               <div key={cat} className="bg-background border border-gray-200 dark:border-gray-800 p-6 rounded-xl shadow-xl hover:-translate-y-1 transition duration-300 flex items-center justify-between cursor-pointer group">
                 <div>
                   <h3 className="text-xl font-bold group-hover:text-primary transition">{cat}</h3>
                   <p className="text-sm text-gray-500">{dict.hero.categories} &rarr;</p>
                 </div>
                 <div className="text-4xl opacity-50 grayscale group-hover:grayscale-0 transition">
-                  {cat === 'Laptops' && '💻'}
-                  {cat === 'Gaming PCs' && '🖥️'}
-                  {cat === 'Peripherals' && '🖱️'}
+                  {cat === dict.hero.laptops && '💻'}
+                  {cat === dict.hero.gamingPCs && '🖥️'}
+                  {cat === dict.hero.peripherals && '🖱️'}
                 </div>
               </div>
             ))}
