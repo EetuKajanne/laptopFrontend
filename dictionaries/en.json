@@ -1,0 +1,40 @@
+{
+  "header": {
+    "searchPlaceholder": "Search...",
+    "about": "About Us",
+    "login": "Login",
+    "cart": "Cart",
+    "categories": "All Categories",
+    "laptops": "Laptops",
+    "desktops": "Desktops",
+    "peripherals": "Peripherals",
+    "shopNamePrimary": "TBD",
+    "shopNameSecondary": "Shop"
+  },
+  "hero": {
+    "justIn": "Just In Stock",
+    "shopNow": "Shop Now",
+    "noStock": "No inventory available",
+    "featuredDescription": "Great performance at great prices.",
+    "collection": "View all products",
+    "categories": "View categories",
+    "view": "View"
+  },
+  "chat": {
+    "greeting": "Hi! 👋 I'm LapBot. How can I help you today?",
+    "placeholder": "Type a message...",
+    "typing": "Typing...",
+    "botName": "LapBot AI",
+    "error": "Sorry, I can't connect right now.",
+    "chips": {
+      "shipping": "Shipping?",
+      "warranty": "Warranty?",
+      "returns": "Returns?"
+    },
+    "answers": {
+      "shipping": "We offer free shipping on all products! This is because we don't have any products yet, so there's nothing to deliver :)",
+      "warranty": "All our refurbished units come with a 1-year warranty. New products have a 2-year warranty. Warranty covvers issues not caused by user damage.",
+      "returns": "You have 30 days to return the product if you are not satisfied."
+    }
+  }
+}
